@@ -1,0 +1,27 @@
+{
+	"build_env":
+	{
+		"PATH": "/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
+	},
+	"color_scheme": "Packages/User/base16-ocean.dark (SublimePythonIDE).tmTheme",
+	"default_encoding": "UTF-8",
+	"draw_white_space": "all",
+	"fallback_encoding": "UTF-8",
+	"font_face": "Ricty Discord",
+	"font_size": 15,
+	"highlight_line": true,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"show_encoding": true,
+	"spacegray_sidebar_font_normal": true,
+	"spacegray_sidebar_tree_normal": true,
+	"spacegray_tabs_font_large": true,
+	"spacegray_tabs_large": true,
+	"tab_size": 4,
+	"theme": "Spacegray.sublime-theme",
+	"translate_tabs_to_spaces": true,
+	"trim_trailing_white_space_on_save": true,
+	"word_wrap": true
+}

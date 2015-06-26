@@ -1,0 +1,29 @@
+[
+	{ "keys": ["super+alt+r"], "command": "reindent" , "args": { "single_line": false } },
+
+	{
+        "keys": ["super+ctrl+l"],
+        "command": "repl_open",
+        "args": {
+            "type": "subprocess",
+            "encoding": "utf8",
+            "cmd": ["sbcl", "-i"],
+            "cwd": "$file_path",
+            "external_id": "lisp",
+            "syntax": "Packages/Lisp/Lisp.tmLanguage"
+        }
+    },
+
+    {
+        "keys": ["super+ctrl+f"],
+        "command": "forth_open",
+        "args": {
+            "type": "subprocess",
+            "encoding": "utf8",
+            "cmd": ["gforth"],
+            "cwd": "$file_path",
+            "external_id": "forth",
+            "syntax": "Packages/Forth.tmLanguage"
+        }
+    }
+]

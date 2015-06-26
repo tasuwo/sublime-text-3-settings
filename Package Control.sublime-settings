@@ -1,0 +1,25 @@
+{
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"AAAPackageDev",
+		"AutoFileName",
+		"Codecs33",
+		"ConvertToUTF8",
+		"LaTeXTools",
+		"Package Control",
+		"paredit",
+		"Simple Print Function",
+		"SublimePythonIDE",
+		"SublimeREPL",
+		"Theme - Spacegray",
+		"TrailingSpaces"
+	],
+	"repositories":
+	[
+		"https://github.com/wuub/SublimeREPL",
+		"https://github.com/wuub/SublimeREPL"
+	]
+}
