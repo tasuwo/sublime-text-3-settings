@@ -1,8 +1,14 @@
 [
+    // Code Folding
+    {"keys": ["ctrl+c","ctrl+f"], "command": "fold",},
+    {"keys": ["ctrl+c","ctrl+u"], "command": "unfold"},
+
+    // インデント整形
 	{ "keys": ["super+alt+r"], "command": "reindent" , "args": { "single_line": false } },
 
+    // lisp
 	{
-        "keys": ["super+ctrl+l"],
+        "keys": ["alt+up"],
         "command": "repl_open",
         "args": {
             "type": "subprocess",
@@ -14,8 +20,9 @@
         }
     },
 
+    // forth
     {
-        "keys": ["super+ctrl+f"],
+        "keys": ["alt+down"],
         "command": "forth_open",
         "args": {
             "type": "subprocess",
@@ -25,5 +32,76 @@
             "external_id": "forth",
             "syntax": "Packages/Forth.tmLanguage"
         }
-    }
+    },
+
+    // File Browser
+    {
+      "keys": ["f1"],
+      "command": "dired",
+      "args": {
+        "immediate": true,
+        "single_pane": true,
+        "other_group": "left",
+        "project": true
+      }
+    },
+
+    // 段落移動
+    {"keys": ["alt+super+["], "command": "sbp_move_to_paragraph", "args": {"direction": 1} , "context": [ {"key": "sbp_use_alt_bindings"}]},
+    {"keys": ["alt+super+]"], "command": "sbp_move_to_paragraph", "args": {"direction": -1} , "context": [ {"key": "sbp_use_alt_bindings"}]},
+
+    // 整形
+    { "keys": ["super+ctrl+s"], "command": "alignment" },
+
+    // BracketHighLighter
+    // Go to left bracket
+    {
+        "keys": ["ctrl+c","ctrl+t","p"],
+        "command": "bh_key",
+        "args":
+        {
+            "no_outside_adj": true,
+            "lines" : true,
+            "plugin":
+            {
+                "type": ["__all__"],
+                "command": "bh_modules.bracketselect",
+                "args": {"select": "left"}
+            }
+        }
+    },
+    // Go to right bracket
+    {
+        "keys": ["ctrl+c","ctrl+t","n"],
+        "command": "bh_key",
+        "args":
+        {
+            "no_outside_adj": true,
+            "lines" : true,
+            "plugin":
+            {
+                "type": ["__all__"],
+                "command": "bh_modules.bracketselect",
+                "args": {"select": "right"}
+            }
+        }
+    },
+    // Select text between brackets
+    {
+        "no_outside_adj": true,
+        "keys": ["ctrl+c","ctrl+m"],
+        "command": "bh_key",
+        "args":
+        {
+            "lines" : true,
+            "plugin":
+            {
+                "type": ["__all__"],
+                "command": "bh_modules.bracketselect"
+            }
+        }
+    },
+    // Remove brackets
+    {"keys": ["ctrl+c","ctrl+e","k"], "command": "bh_remove_brackets"},
+    {"keys": ["ctrl+c","ctrl+e","w"], "command": "bh_swapping.bracketselect."},
 ]
