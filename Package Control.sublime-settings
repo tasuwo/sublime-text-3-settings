@@ -5,9 +5,12 @@
 	"installed_packages":
 	[
 		"AAAPackageDev",
+		"Abacus",
 		"Alignment",
 		"AutoFileName",
 		"BracketHighlighter",
+		"C++ Snippets",
+		"Clang-Complete",
 		"Codecs33",
 		"ConvertToUTF8",
 		"FileBrowser",
@@ -19,17 +22,22 @@
 		"Package Control",
 		"paredit",
 		"Predawn",
+		"RecentActiveFiles",
 		"ShellCommand",
 		"SideBarEnhancements",
 		"Simple Print Function",
 		"sublemacspro",
 		"SublimeLinter",
+		"SublimeLinter-contrib-clang",
 		"SublimeLinter-contrib-mlint",
 		"SublimePythonIDE",
 		"SublimeREPL",
+		"Swift",
 		"Terminal",
+		"Terminality",
 		"Theme - Spacegray",
-		"TrailingSpaces"
+		"TrailingSpaces",
+		"Verilog"
 	],
 	"repositories":
 	[

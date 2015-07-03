@@ -3,7 +3,7 @@
     // multiline bracket spans.
     "content_highlight_bar": false,
     // Experimental: Align the content highlight bar at the bracket indent level
-    "align_content_highlight_bar": true,
+    "align_content_highlight_bar": false,
     // Match brackets only when the cursor is touching the inside of the bracket
     "match_only_adjacent": false,
     "match_brackets_only_when_between": true,
@@ -12,7 +12,7 @@
     ///////////// high visibility mode ////////////////
     ///////////////////////////////////////////////////
     // Enable high visibility by default when sublime starts up
-    "high_visibility_enabled_by_default": true,
+    "high_visibility_enabled_by_default": false,
     // High visibility style and color for high visibility mode
     // (solid|outline|underline)
     // ST3 has additional options of (thin_underline|squiggly|stippled)

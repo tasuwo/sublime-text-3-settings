@@ -1,3 +1,15 @@
 {
-    "color_scheme": "Packages/User/predawn (SL) (SublimePythonIDE).tmTheme",
+	"color_scheme": "Packages/User/predawn (SL) (SublimePythonIDE).tmTheme",
+	"dired_to_copy":
+	[
+		"/Users/tozawa/Documents/MATLAB/Tools/PlotTool/installPlotTool.m",
+		"/Users/tozawa/Documents/MATLAB/Tools/PlotTool/uninstallPlotTool.m",
+		"/Users/tozawa/Documents/MATLAB/Tools/PlotTool/.DS_Store",
+		"/Users/tozawa/Documents/MATLAB/Tools/PlotTool/tmp/getSimStopSatAns.m",
+		"/Users/tozawa/Documents/MATLAB/Tools/PlotTool/tmp/"
+	],
+	"dired_to_move":
+	[
+	],
+	"vcs_color_blind": true
 }

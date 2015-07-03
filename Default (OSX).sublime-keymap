@@ -4,7 +4,8 @@
     {"keys": ["ctrl+c","ctrl+u"], "command": "unfold"},
 
     // インデント整形
-	{ "keys": ["super+alt+r"], "command": "reindent" , "args": { "single_line": false } },
+	// { "keys": ["ctrl+c","ctrl+i"], "command": "reindent" , "args": { "single_line": false } },
+    { "keys": ["ctrl+c","ctrl+i"], "command": "abacus" },
 
     // lisp
 	{
@@ -32,18 +33,6 @@
             "external_id": "forth",
             "syntax": "Packages/Forth.tmLanguage"
         }
-    },
-
-    // File Browser
-    {
-      "keys": ["f1"],
-      "command": "dired",
-      "args": {
-        "immediate": true,
-        "single_pane": true,
-        "other_group": "left",
-        "project": true
-      }
     },
 
     // 段落移動
@@ -104,4 +93,36 @@
     // Remove brackets
     {"keys": ["ctrl+c","ctrl+e","k"], "command": "bh_remove_brackets"},
     {"keys": ["ctrl+c","ctrl+e","w"], "command": "bh_swapping.bracketselect."},
+
+    // 余白削除
+    { "keys": ["ctrl+c","ctrl+e","s"], "command": "delete_trailing_spaces" },
+
+    // FileBrowser
+    {
+      "keys": ["ctrl+9"],
+      "command": "dired",
+      "args": {
+        "immediate": true,
+        "single_pane": true,
+        "other_group": "left",
+        "project": true
+      }
+    },
+    {
+      "keys": ["ctrl+f"],
+      "command": "dired_select",
+      "args": { "inline": true },
+      "context": [
+        { "key": "selector", "operator": "equal", "operand": "text.dired" },
+        { "key": "setting.dired_rename_mode", "operand": false }
+      ]
+    },
+    {
+      "keys": ["ctrl+b"],
+      "command": "dired_fold",
+      "context": [
+        { "key": "selector", "operator": "equal", "operand": "text.dired" },
+        { "key": "setting.dired_rename_mode", "operand": false }
+      ]
+    },
 ]
